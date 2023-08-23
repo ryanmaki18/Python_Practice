@@ -1,11 +1,27 @@
-from validParentheses import Solution
+from merging2SortedLists import Solution
 import unittest
 
-class ValidParentheses(unittest.TestCase):
+class MergingTwoSortedLists(unittest.TestCase):
     def test_example_1(self):
         solution = Solution()
-        self.assertEqual(solution.isValid("()"), True)
+        list1 = [1,2,4]
+        list2 = [1,3,4]
+        correct = [1,1,2,3,4,4]
+        self.assertEqual(solution.mergeTwoLists(list1, list2), correct)
         
+    def test_example_empty(self):
+        solution = Solution()
+        list1 = []
+        list2 = []
+        correct = []
+        self.assertEqual(solution.mergeTwoLists(list1, list2), correct)
+        
+    def test_example_singleElement(self):
+        solution = Solution()
+        list1 = []
+        list2 = [0]
+        correct = [0]
+        self.assertEqual(solution.mergeTwoLists(list1, list2), correct)
 
 if __name__ == '__main__':
     unittest.main()
