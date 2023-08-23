@@ -1,0 +1,12 @@
+from validParentheses import Solution
+import unittest
+
+class ValidParentheses(unittest.TestCase):
+    def test_example_1(self):
+        solution = Solution()
+        self.assertEqual(solution.isValid("()"), True)
+        
+
+if __name__ == '__main__':
+    unittest.main()
+    
