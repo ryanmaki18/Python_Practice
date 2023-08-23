@@ -6,7 +6,6 @@ class ListNode:
         self.val = val
         self.next = next
 
-
 class MergingTwoSortedLists(unittest.TestCase):
     # Recursively checks if the lists being compared are equal or not
     def are_linked_lists_equal(self, list1, list2):
