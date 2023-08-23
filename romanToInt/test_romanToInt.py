@@ -22,6 +22,7 @@ class TestRomanToInt(unittest.TestCase):
         solution = Solution()
         self.assertEqual(solution.romanToInt("MII"), 1002)
 
+
 if __name__ == '__main__':
     unittest.main()
     
