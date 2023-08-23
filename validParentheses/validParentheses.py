@@ -1,4 +1,18 @@
 class Solution:
+    # def isValid(self, s):
+    #     stack = []
+    #     for c in s:
+    #         if c in '([{':
+    #             stack.append(c)
+    #         else:
+    #             if not stack or \
+    #                 (c == ')' and stack[-1] != '(') or \
+    #                 (c == '}' and stack[-1] != '{') or \
+    #                 (c == ']' and stack[-1] != '['):
+    #                 return False
+    #             stack.pop()
+    #     return not stack
+
     def isValid(self, s: str) -> bool:
         valid_chars = {'(', ')', '{', '}', '[', ']'}
         open_to_close = {')': '(', '}': '{', ']': '['}
@@ -16,3 +30,4 @@ class Solution:
             return len(stack) == 0
         else: 
             return False
+        
