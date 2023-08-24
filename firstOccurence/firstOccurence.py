@@ -8,7 +8,7 @@ class Solution:
     """
 
 
-    # ------- Brute Force -------
+    # ------- Brute Force. Is O(N*H) -------
     """
     def strStr(self, haystack: str, needle: str) -> int:
         N, H = len(needle), len(haystack)
@@ -23,7 +23,7 @@ class Solution:
         return -1  
     """
 
-    # ------- Using KPM algorithm -------
+    # ------- Using KPM algorithm. Is O(n) -------
     def strStr(self, haystack: str, needle: str) -> int:
         lps = [0] * len(needle)
 
@@ -48,4 +48,3 @@ class Solution:
                 return h - n + 1
 
         return -1
-        
