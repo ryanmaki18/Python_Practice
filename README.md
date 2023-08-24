@@ -1,2 +1,2 @@
 # Python_Practice
- Questions mostly from LeetCode, done as practice
+    Questions from LeetCode, done as practice in free time
