@@ -12,7 +12,7 @@ class SearchInsert(unittest.TestCase):
     def test_example_2(self):
         solution = Solution()
         nums = [1,3,5,6]
-        target = 7
+        target = 2
         output = 1
         self.assertEqual(solution.searchInsert(nums, target), output)
         
