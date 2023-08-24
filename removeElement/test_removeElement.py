@@ -16,7 +16,13 @@ class RemoveElement(unittest.TestCase):
         val = 2
         self.assertEqual(solution.removeElement(given_input, val), output)
         
-
+    def test_example_3(self):
+        solution = Solution()
+        given_input = [0,0,0,0]
+        output = 0
+        val = 0
+        self.assertEqual(solution.removeElement(given_input, val), output)
+        
 
 if __name__ == '__main__':
     unittest.main()
