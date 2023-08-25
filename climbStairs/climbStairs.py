@@ -1,11 +1,4 @@
 class Solution:
-    # # ------ Implementation using Recursion ------ 
-    # def climbStairs(self, n: int) -> int:
-    #     if n == 0 or n == 1:
-    #         return 1
-    #     return self.climbStairs(n-1) + self.climbStairs(n-2)
-
-
     # ------------ Implmentations using Dynamic Programming ------------
     # ------ Implementation using Memotization ------
     def climbStairs(self, n: int) -> int:
