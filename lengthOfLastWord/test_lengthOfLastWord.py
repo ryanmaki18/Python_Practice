@@ -29,7 +29,7 @@ class LengthOfLastWord(unittest.TestCase):
     def test_long_word(self):
         solution = Solution()
         s = "Input is supercalifragilisticexpialidocious"
-        output = 34                                           ## TODO: Check if correct later
+        output = 34
         self.assertEqual(solution.lengthOfLastWord(s), output)
     
         
