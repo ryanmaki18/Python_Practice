@@ -13,6 +13,12 @@ class ClimbStairs(unittest.TestCase):
         n = 3
         output = 3
         self.assertEqual(solution.climbStairs(n), output)
+        
+    def test_example_3(self):
+        solution = Solution()
+        n = 8
+        output = 34
+        self.assertEqual(solution.climbStairs(n), output)
     
 if __name__ == '__main__':
     unittest.main()
