@@ -2,27 +2,28 @@ from isPalindrome import Solution
 import unittest
 
 class TestIsPalindrome(unittest.TestCase):
-    def test_positive_palindromes(self):             # FIXME: All stolen from other isPalindrome
+    def test_palindrome_1(self):
         solution = Solution()
-        self.assertTrue(solution.isPalindrome(0))
-        self.assertTrue(solution.isPalindrome(121))
-        self.assertTrue(solution.isPalindrome(12321))
-        self.assertTrue(solution.isPalindrome(1221))
-
-    def test_positive_non_palindromes(self):
+        self.assertTrue(solution.isPalindrome("A man, a plan, a canal: Panama"))
+        
+    def test_palindrome_2(self):
         solution = Solution()
-        self.assertFalse(solution.isPalindrome(123))
-        self.assertFalse(solution.isPalindrome(12345))
-
-    def test_negative_number(self):
+        self.assertTrue(solution.isPalindrome("racecar"))
+        
+    def test_palindrome_3(self):
         solution = Solution()
-        self.assertFalse(solution.isPalindrome(-121))
+        self.assertTrue(solution.isPalindrome(" "))
 
-    def test_single_digit_numbers(self):
+    def test_palindrome_4(self):
         solution = Solution()
-        for i in range(10):
-            self.assertTrue(solution.isPalindrome(i))
-
+        self.assertFalse(solution.isPalindrome("race a car"))
+        
+    def test_palindrome_5(self):
+        solution = Solution()
+        self.assertFalse(solution.isPalindrome("Hello World"))
+        
+ 
+ 
 if __name__ == '__main__':
     unittest.main()
     
