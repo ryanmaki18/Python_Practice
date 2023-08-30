@@ -1,7 +1,7 @@
 from isPalindrome import Solution
 import unittest
 
-class TestIsPalindrome(unittest.TestCase):
+class IsPalindrome(unittest.TestCase):
     def test_palindrome_1(self):
         solution = Solution()
         self.assertTrue(solution.isPalindrome("A man, a plan, a canal: Panama"))
