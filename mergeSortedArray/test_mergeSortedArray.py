@@ -8,8 +8,10 @@ class MergeSortedList(unittest.TestCase):
         m = 3
         nums2 = [2,5,6]
         n = 3
-        output: [1,2,2,3,5,6]
-        self.assertEqual(solution.merge(nums1, m, nums2, n), output)
+        output = [1,2,2,3,5,6]
+        
+        solution.merge(nums1, m, nums2, n)    ## Call function, nums1 is modified in place
+        self.assertEqual(nums1, output)
         
     def test_example_2(self):
         solution = Solution()
@@ -17,8 +19,10 @@ class MergeSortedList(unittest.TestCase):
         m = 1
         nums2 = []
         n = 0
-        output: [1]
-        self.assertEqual(solution.merge(nums1, m, nums2, n), output)
+        output = [1]
+        
+        solution.merge(nums1, m, nums2, n)
+        self.assertEqual(nums1, output)
         
     def test_example_3(self):
         solution = Solution()
@@ -26,8 +30,10 @@ class MergeSortedList(unittest.TestCase):
         m = 0
         nums2 = [1]
         n = 1
-        output: [1]
-        self.assertEqual(solution.merge(nums1, m, nums2, n), output)
+        output = [1]
+        
+        solution.merge(nums1, m, nums2, n)    ## Call function, nums1 is modified in place
+        self.assertEqual(nums1, output)
 
         
 if __name__ == '__main__':
