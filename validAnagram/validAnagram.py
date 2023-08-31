@@ -12,10 +12,10 @@ class Solution:
     #             return False
     #     return True   
     
-    # Using built-in counter function
-    def isAnagram(self, s: str, t: str) -> bool:
-        sCount, tCount = Counter(s), Counter(t)
-        return sCount == tCount
+    # # Using built-in counter function
+    # def isAnagram(self, s: str, t: str) -> bool:
+    #     sCount, tCount = Counter(s), Counter(t)
+    #     return sCount == tCount
     
     # Without using built-in counter function
     def isAnagram(self, s: str, t: str) -> bool:
@@ -32,5 +32,4 @@ class Solution:
                 counter_t[ord(char) - ord('a')] += 1
             
             return counter_s == counter_t
-    
     
