@@ -22,7 +22,6 @@ class Solution:
     #     return 0
 
     # Moore Voting Algorithm
-
     def majorityElement(self, nums: list[int]) -> int:
         count = 0
         candidate = 0
