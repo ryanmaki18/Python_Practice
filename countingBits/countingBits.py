@@ -3,4 +3,11 @@
 
 class Solution:
     def countBits(self, n: int) -> list[int]:
-        
+        result = []
+        for i in range(0, n + 1):
+            binary = bin(i)
+            print(binary[2:])
+
+            if binary[2:].contains(1):
+
+        return none
